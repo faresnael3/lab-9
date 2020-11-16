@@ -1,0 +1,36 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src ="formChecker.js"></script>
+</head>
+<body>
+    <h1>Fares Store</h1>
+    <form action="customerBackend.php" method="post" onsubmit="return check(event)">
+      Username: <input type="text" name="username" id="email"><br>
+      Password: <input type="text" name="password" id ="pass"><br>
+      <div class="product">
+        <p>Apple Airpods Pro</p>
+        <img src="airpod.jpeg" width="500" height="600" >
+        <p>price: $199.59</p>
+        Quantity:<input type="text" name="quantity1" id = "quantity1">
+        <br>
+        <p>Wind breaker</p>
+        <img src="wind.jpg" width="500" height="600">
+        <p>price: $27.5</p>
+        Quantity:<input type="text" name="quantity2" id = "quantity2">
+        <p>White Sneaker</p>
+        <img src="shoes.jpeg" width="500" height="600">
+        <p>price: $14.55</p>
+        Quantity:<input type="text" name="quantity3" id = "quantity3">
+      </div>
+      <input type="radio" id="free" name="shipping" value="free">
+      <label for="free">Free 7 day</label><br>
+      <input type="radio" id="night" name="shipping" value="night">
+      <label for="night">$50.00 over night</label><br>
+      <input type="radio" id="three" name="shipping" value="three">
+      <label for="three">$5.00 three day</label><br>
+      <input type="submit">
+
+    </form>
+    <button id = "reset" onclick="reset()">Reset</button>
+</body>
